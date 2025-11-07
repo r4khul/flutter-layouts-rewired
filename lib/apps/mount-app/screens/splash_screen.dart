@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:layouts_practice/apps/mount-app/constants/theme_color.dart';
 import 'package:layouts_practice/apps/mount-app/screens/home_screen.dart';
 
-final Color mainColor = Color(0xFFFF5656);
+
 
 class SplashScreen extends StatelessWidget {
   const SplashScreen({super.key});
