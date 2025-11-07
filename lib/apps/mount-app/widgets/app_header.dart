@@ -26,6 +26,7 @@ class AppHeader extends StatelessWidget {
                 style: TextStyle(
                   color: Colors.black,
                   fontWeight: FontWeight.bold,
+                  fontSize: 18
                 ),
               ),
               Text(
