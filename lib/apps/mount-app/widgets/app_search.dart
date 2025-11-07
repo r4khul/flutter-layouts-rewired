@@ -23,7 +23,7 @@ class AppSearch extends StatelessWidget {
                 Expanded(
                   child: Container(
                     color: Colors.grey[300],
-                    height: 45,
+                    height: 55,
                     child: Padding(
                       padding: const EdgeInsets.all(10.0),
                       child: Row(
@@ -37,7 +37,7 @@ class AppSearch extends StatelessWidget {
                   ),
                 ),
                 SizedBox(width:10 ,),
-                Container(child: Icon(Icons.filter_alt), color: mainColor, width: 45,height: 45,),
+                Container(child: Icon(Icons.filter_alt), color: mainColor, width: 55,height: 55,),
               ],
             ),
           )
