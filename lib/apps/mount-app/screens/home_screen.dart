@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:layouts_practice/apps/mount-app/constants/theme_color.dart';
+import 'package:layouts_practice/apps/mount-app/widgets/app_category_list.dart';
 import 'package:layouts_practice/apps/mount-app/widgets/app_header.dart';
 import 'package:layouts_practice/apps/mount-app/widgets/app_mount_list_view.dart';
 import 'package:layouts_practice/apps/mount-app/widgets/app_search.dart';
@@ -26,7 +27,11 @@ class HomeScreen extends StatelessWidget {
       body: Column(
         mainAxisAlignment: MainAxisAlignment.start,
         crossAxisAlignment: CrossAxisAlignment.start,
-        children: [AppHeader(), AppSearch(), Expanded(child: AppMountListView())
+        children: [
+          AppHeader(),
+          AppSearch(),
+          Expanded(child: AppMountListView()),
+          AppCategoryList()
         ],
       ),
     );
