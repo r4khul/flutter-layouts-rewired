@@ -7,28 +7,31 @@ class AppHeader extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.only(left: 30, top: 30, right: 30),
+      padding: const EdgeInsets.only(left: 30, top: 30, right: 30),
       child: Row(
-        crossAxisAlignment: CrossAxisAlignment.start,
+        crossAxisAlignment: CrossAxisAlignment.center, 
         children: [
-          CircleAvatar(
+          const CircleAvatar(
             backgroundImage: NetworkImage(
               "https://avatars.githubusercontent.com/u/118678415?v=1",
             ),
-            radius: 30,
+            radius: 35,
           ),
-          SizedBox(width: 20),
+          const SizedBox(width: 20),
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text(
-                "Hello, Roman",
+              const Text(
+                "Hello, Mr. X",
                 style: TextStyle(
                   color: Colors.black,
                   fontWeight: FontWeight.bold,
                 ),
               ),
-              Text("Good Morning", style: TextStyle(color: mainColor)),
+              Text(
+                "Good Morning",
+                style: TextStyle(color: mainColor, fontSize: 12),
+              ),
             ],
           ),
         ],
