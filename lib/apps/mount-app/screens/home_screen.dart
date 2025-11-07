@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:layouts_practice/apps/mount-app/constants/theme_color.dart';
+import 'package:layouts_practice/apps/mount-app/widgets/app_header.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -12,8 +13,16 @@ class HomeScreen extends StatelessWidget {
         centerTitle: true,
         foregroundColor: mainColor,
       ),
-      drawer: Drawer(),
-      body: Column(children: [
+      drawer: Drawer(
+        backgroundColor: mainColor,
+        child: Container( 
+          margin: EdgeInsets.all(20),
+          alignment: Alignment.bottomLeft,
+          child: Icon(Icons.terrain, size: 60),
+        ),
+      ),
+      body: Column(mainAxisAlignment: MainAxisAlignment.start, children: [
+        AppHeader()
         ],
       ),
     );
