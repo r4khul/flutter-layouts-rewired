@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:layouts_practice/apps/mount-app/models/mount.dart';
 
 class DetailsHeader extends StatelessWidget {
-  final item;
+  final MountModel item;
   const DetailsHeader({super.key, required this.item});
 
   @override
@@ -49,6 +50,12 @@ class DetailsHeader extends StatelessWidget {
             left: 25,
           ),
           AppBar(
+            leading: IconButton(
+              onPressed: () {
+                Navigator.pop(context);
+              },
+              icon: Icon(Icons.arrow_back_ios, color: Colors.white, size: 30),
+            ),
             elevation: 0,
             backgroundColor: Colors.transparent,
             title: Icon(Icons.terrain, color: Colors.white, size: 32),

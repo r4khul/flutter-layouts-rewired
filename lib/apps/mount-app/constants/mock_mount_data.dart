@@ -8,6 +8,9 @@ final List<MountModel> mountItems = [
     description:
         'Semeru, or Mount Semeru, is an active volcano in East Java, Indonesia. It is located in the subduction zone, where the Indo-Australia plate subducts under the Eurasia plate. It is the highest mountain on the island of Java.',
     location: 'East Java',
+    rating: '4.5',
+    pricing: '\$23',
+    open: '24Hrs',
   ),
   MountModel(
     path:
@@ -16,6 +19,9 @@ final List<MountModel> mountItems = [
     description:
         'Mount Merbabu is a dormant stratovolcano in Central Java province on the Indonesian island of Java. The name Merbabu could be loosely translated as Mountain of Ash from the Javanese combined words; Meru means mountain and awu or abu means ash.',
     location: 'Central Java',
+    rating: '4.2',
+    pricing: '\$32',
+    open: '6AM-6PM',
   ),
   MountModel(
     path:
@@ -24,6 +30,9 @@ final List<MountModel> mountItems = [
     description:
         'Mount Vesuvius is a somma-stratovolcano located on the Gulf of Naples in Campania, Italy, about 9 km east of Naples and a short distance from the shore. It is one of several volcanoes which form the Campanian volcanic arc.',
     location: 'Italy',
+    rating: '4.8',
+    pricing: '\$21',
+    open: '24Hrs',
   ),
   MountModel(
     path:
@@ -32,5 +41,8 @@ final List<MountModel> mountItems = [
     description:
         'Popocatépetl is an active stratovolcano located in the states of Puebla, Morelos, and Mexico in central Mexico. It lies in the eastern half of the Trans-Mexican volcanic belt. At 5,426 m it is the second highest peak in Mexico, after Citlaltépetl at 5,636 m.',
     location: 'Mexico',
+    rating: '3.9',
+    pricing: '\$21',
+    open: '8AM-5PM',
   ),
 ];
